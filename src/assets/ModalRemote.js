@@ -133,6 +133,7 @@ function ModalRemote(modalId) {
      * Show loading state in modal
      */
     this.displayLoading = function () {
+        this.hidenCloseButton();
         this.setContent(this.loadingContent);
         this.setTitle(this.defaults.loadingTitle);
     };
@@ -169,7 +170,7 @@ function ModalRemote(modalId) {
             url: url,
             method: method,
             data: data,
-            async: false,
+            async: true,
             beforeSend: function () {
                 beforeRemoteRequest.call(instance);
             },
