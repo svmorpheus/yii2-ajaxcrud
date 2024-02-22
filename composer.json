@@ -30,5 +30,12 @@
     },
     "extra": {
         "bootstrap": "johnitvn\\ajaxcrud\\Bootstrap"
-    }
+    },
+	"repositories": [
+        {
+            "type": "github",
+            "url":  "git@github.com:svmorpheus/yii2-ajaxcrud.git"
+        }
+    ]
+	
 }
